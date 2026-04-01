@@ -11,11 +11,11 @@ With the development of superconducting quantum computer architecture towards la
 2) sudo apt install mpich
 3) pip install -r requirements.txt
 
-#Compilation Guide
+# Compilation Guide
 1) cd your path to MPIQ
 2) make
 
-#File Structure
+# File Structure
 0) The program in the MPIQ is the library functions.
 1) The program in the demo is used to simulate quantum computing.
 2) The conf directory contains the config.json configuration file.
@@ -23,12 +23,12 @@ With the development of superconducting quantum computer architecture towards la
 4) The server component functions as a daemon process.
 5) The programs in the test directory are test cases.
 
-#Usage Method:
+# Usage Method:
 0) cd server
 1) mpirun -np <number_of_IPs> ./server_user
 2) cd test
 3) To run test_all_gather using mpirun while ensuring other test cases execute normally, you can use the following command:
  mpirun -np <number_of_processes> ./test_all_gather
 
-#Attention
+# Attention
 0) In the Makefile, FINDLIB needs to be changed to the directory containing the Python interpreter, LDPY needs to be changed to the directory containing the Python libraries,  and LDPYLIBS should be changed to the corresponding Python interpreter.
